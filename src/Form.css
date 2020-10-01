@@ -1,0 +1,56 @@
+/* 
+import React, { Component } from "react";
+import "./App.css";
+class Form extends Component {
+  constructor() {
+    super();
+    this.state = {
+      firstName: "",
+      lastName: "",
+    };
+  }
+  handleFirstName = (event) => {
+    this.setState({
+      firstName: event.target.value,
+    });
+  };
+  handleLastName = (event) => {
+    this.setState({
+      lastName: event.target.value,
+    });
+  };
+  handleSubmit = (event) => {
+    alert(` ${this.state.firstName} ${this.state.lastName}`);
+    event.preventDefault();
+  };
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <label>First Name</label>
+          <input
+            type="text"
+            name="firstname"
+            value={this.state.firstName}
+            onChange={this.handleFirstName}
+          />
+          <label>Last Name</label>
+          <input
+            type="text"
+            // name="lastname"
+            value={this.state.lastName}
+            onChange={this.handleLastName}
+          />
+          <input type="checkbox" />
+          <select>
+            <option>Mr</option>
+            <option>Mrs</option>
+          </select>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    );
+  }
+}
+
+export default Form; */
